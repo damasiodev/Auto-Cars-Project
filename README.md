@@ -6,7 +6,7 @@ O projeto traz um design moderno, animações suaves e uma interface totalmente 
 ---
 
 ## 🌐 Visualize o projeto  
-👉 [Ver Projeto Online](https://seuusuario.github.io/auto-cars/)  
+👉 [Ver Projeto Online](https://damasiodev.github.io/Auto-Cars-Project/)  
 
 ---
 
@@ -30,7 +30,7 @@ O projeto traz um design moderno, animações suaves e uma interface totalmente 
 ---
 
 ## 📸 Prévia do Projeto  
-[<img src="./img/preview.JPG" width="400px" />](./img/preview.JPG) [<img src="./img/preview.JPG" width="400px" />](./img/preview.JPG)
+[<img src="./img/preview.JPG" width="400px" />](./img/preview.JPG) [<img src="./img/preview-2.JPG" width="400px" />](./img/preview-2.JPG)
 
 ---
 
