@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AUTO-CARS | Aluguel e venda de veículos</title>
+    <link rel="shortcut icon" href="./img/ico.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+
+<body class="font-sans bg-gray-50">
+
+    <!-- NAV -->
+    <nav class="bg-sky-950 text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-car text-2xl text-yellow-400"></i>
+                <span class="text-2xl font-bold"><a href="#">AUTO-<span class="text-yellow-400">CARS</span></span></a>
+            </div>
+
+            <div class="hidden bg-sky-950 md:flex space-x-8 items-center text-2xl">
+                <a href="#" class="hover:text-yellow-400 transition">Home</a>
+
+                <div class="dropdown relative">
+                    <button class="hover:text-yellow-400 transition flex items-center">
+                        Carros <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </button>
+                    <div class="dropdown-menu absolute hidden bg-sky-950 mt-2 py-2 w-48 rounded shadow-lg">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-800 hover:text-yellow-400">Venda</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-800 hover:text-yellow-400">Aluguel</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-800 hover:text-yellow-400">Novidades</a>
+                    </div>
+                </div>
+
+                <a href="#" class="hover:text-yellow-400 transition">Serviços</a>
+                <a href="#" class="hover:text-yellow-400 transition">Sobre</a>
+                <a href="#" class="hover:text-yellow-400 transition">Contato</a>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <button
+                    class="hidden md:block bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded font-medium transition">
+                    ALUGUE AGORA
+                </button>
+                <button class="md:hidden text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 1 - BANNER -->
+    <section class="hero-bg text-white py-32 px-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Carros de Luxo para <span class="text-yellow-400">Toda
+                    Ocasião</span>.</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Experimente o luxo sobre rodas com a nossa coleção
+                exclusiva de veículos premium para aluguel ou compra.</p>
+
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <button
+                    class="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-3 rounded font-bold text-lg transition">
+                    Premium
+                </button>
+                <button
+                    class="bg-transparent hover:bg-white hover:text-black border-2 border-white text-white px-8 py-3 rounded font-bold text-lg transition">
+                    Ver Carros
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2 - BUSCA -->
+    <section class="bg-white py-12 px-4 shadow-lg -mt-16 mx-4 rounded-lg relative z-10">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="relative">
+                    <select class="w-full p-3 border border-gray-300 rounded-lg appearance-none">
+                        <option>Selecionar Marca</option>
+                        <option>Mercedes-Benz</option>
+                        <option>BMW</option>
+                        <option>Audi</option>
+                        <option>Porsche</option>
+                        <option>Lamborghini</option>
+                    </select>
+                    <i class="fas fa-chevron-down absolute right-3 top-4 text-gray-400"></i>
+                </div>
+
+                <div class="relative">
+                    <select class="w-full p-3 border border-gray-300 rounded-lg appearance-none">
+                        <option>Selecionar Modelos</option>
+                        <option>Todos Modeloss</option>
+                        <option>SUV</option>
+                        <option>Sedan</option>
+                        <option>Sports</option>
+                        <option>Conversível</option>
+                    </select>
+                    <i class="fas fa-chevron-down absolute right-3 top-4 text-gray-400"></i>
+                </div>
+
+                <div class="relative">
+                    <select class="w-full p-3 border border-gray-300 rounded-lg appearance-none">
+                        <option>Faixa de Preço</option>
+                        <option>R$100 - R$300/dia</option>
+                        <option>R$300 - R$500/dia</option>
+                        <option>R$500+/dia</option>
+                    </select>
+                    <i class="fas fa-chevron-down absolute right-3 top-4 text-gray-400"></i>
+                </div>
+
+                <button class="bg-yellow-500 hover:bg-sky-950 text-white p-3 rounded-lg font-bold transition">
+                    Buscar <i class="fas fa-search ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3 - VEÍCULOS -->
+    <section class="py-16 px-4 bg-gray-50">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Veículos <span class="text-yellow-500">Premium</span>
+                    Em Destaque</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Descubra nossa seleçãode luxo disponíveis para aluguel ou
+                    compra. </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- CARRO 1 -->
+                <div class="car-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative">
+                        <img src="./img/mercedes.JPG" alt="Mercedes-Benz S-Class" class="w-full h-64 object-cover">
+                        <div
+                            class="absolute top-4 right-4 bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-bold">
+                            FOR SALE</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Mercedes-Benz S-Class</h3>
+                            <span class="text-lg font-bold">R$ 578.900</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">2022 | 1,231 mi | Automático</p>
+                        <div class="flex justify-between text-gray-500 mb-4">
+                            <span><i class="fas fa-gas-pump mr-1"></i> Hybrido</span>
+                            <span><i class="fas fa-users mr-1"></i> 5 lugares</span>
+                            <span><i class="fas fa-tachometer-alt mr-1"></i> 463 HP</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <button class="bg-sky-950 hover:bg-gray-800 text-white px-4 py-2 rounded transition">
+                                Detalhes
+                            </button>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded transition">
+                                <i class="fas fa-phone mr-1"></i> Contato
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARRO 2 -->
+                <div class="car-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative">
+                        <img src="./img/porshe.JPG" alt="Porsche 911 Turbo S" class="w-full h-64 object-cover">
+                        <div
+                            class="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                            FOR RENT</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Porsche 911 Turbo S</h3>
+                            <span class="text-lg font-bold">R$ 599/dia</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">2023 | 263 avaliações | Automático</p>
+                        <div class="flex justify-between text-gray-500 mb-4">
+                            <span><i class="fas fa-gas-pump mr-1"></i> Premium</span>
+                            <span><i class="fas fa-users mr-1"></i> 2 Lugares</span>
+                            <span><i class="fas fa-tachometer-alt mr-1"></i> 640 HP</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <button class="bg-sky-950 hover:bg-gray-800 text-white px-4 py-2 rounded transition">
+                                Detalhes
+                            </button>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded transition">
+                                <i class="fas fa-calendar-alt mr-1"></i> Agende Agora
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARRO 3 -->
+                <div class="car-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative">
+                        <img src="./img/range-rover.JPG" alt="Range Rover Autobiography"
+                            class="w-full h-64 object-cover">
+                        <div
+                            class="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                            FOR RENT</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Range Rover Autobiography</h3>
+                            <span class="text-lg font-bold">R$ 399/day</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">2023 | 312 avaliações | Automático</p>
+                        <div class="flex justify-between text-gray-500 mb-4">
+                            <span><i class="fas fa-gas-pump mr-1"></i> Diesel</span>
+                            <span><i class="fas fa-users mr-1"></i> 5 Lugares</span>
+                            <span><i class="fas fa-tachometer-alt mr-1"></i> 395 HP</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <button class="bg-sky-950 hover:bg-gray-800 text-white px-4 py-2 rounded transition">
+                                Detalhes
+                            </button>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded transition">
+                                <i class="fas fa-calendar-alt mr-1"></i> Agende Agora
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button
+                    class="border-2 border-black hover:bg-yellow-600 hover:text-white px-8 py-3 rounded font-bold transition">
+                    VER TODOS OS VEÍCULOS <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4 - POR QUE -->
+    <section class="py-16 px-4 bg-black text-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">POR QUE ESCOLHER A <span
+                        class="text-yellow-500">AUTO-CARS </span>?
+                </h2>
+                <p class="text-gray-300 max-w-2xl mx-auto">Experimente a sensação com nossos serviços exclusivos e a
+                    melhor seleção de carros!</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="bg-gray-800 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-2xl text-yellow-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">QUALIDADE PREMIUM</h3>
+                    <p class="text-gray-300"> Todos os nossos veículos passam por uma rigorosa inspeção e manutenção
+                        para atingir a melhor performance!</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="bg-gray-800 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-headset text-2xl text-yellow-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2"> SUPORTE 24h </h3>
+                    <p class="text-gray-300">Nosso dedicado time está disponível por 24h para lhe dar assistência e
+                        resolver todos os seus problemas!</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="bg-gray-800 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tag text-2xl text-yellow-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">MELHOR PREÇO</h3>
+                    <p class="text-gray-300">O melhor custo benefício de todo o mercado. Cobrimos qualquer oferta!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5 - CLIENTES -->
+    <section class="py-16 px-4 bg-gray-50">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">NOSSOS <span class="text-yellow-500"> CLIENTES</span>
+                </h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Descubra como nossos clientes descrevem a experiência
+                    exclusiva de dirigir com a AUTO-CARS, relatando não apenas a excelência de nossos veículos de luxo,
+                    mas também o cuidado, a confiança e o profissionalismo que tornam cada jornada verdadeiramente
+                    inesquecível.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-20 h-20 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="CLEITON JUNIOR"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">CLEITON JUNIOR</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600  text-justify">"Aluguei um Porsche para o final de semana do meu
+                        aniversário. O processo
+                        foi simples e o carro estava em perfeitas condições. Com certeza usarei a AUTO-CARS novamente"
+                    </p>
+                </div>
+
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-20 h-20 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="FÁTIMA SILVA"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">FÁTIMA SILVA</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text justify">"Comprei minha Range Rover dos sonhos pela AUTO-CARS. A equipe
+                        deles tornou a
+                        experiência de compra excepcional com seu conhecimento e profissionalismo."</p>
+                </div>
+
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-20 h-20 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="JOSÉ FELIPE"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">JOSÉ FELIPE</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-justify">"A Mercedes S-Class que aluguei para uma viagem de negócios
+                        superou todas
+                        as expectativas. O serviço de entrega foi rápido e o carro estava impecável."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6 - EXPERIÊNCIA -->
+    <section class="py-20 px-4 bg-yellow-500">
+        <div class="container mx-auto text-center">
+            <h2 class="text-white md:text-4xl font-bold mb-6">PRONTO PARA A SUA <span
+                    class="text-sky-950">EXPERIÊNCIA</span>?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto"> Explore nossa coleção exclusiva de veículos de luxo disponíveis
+                para aluguel ou compra, cada um selecionado para oferecer a você o máximo em conforto, sofisticação e
+                desempenho incomparável </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <button class="bg-sky-950 hover:bg-gray-800 text-white px-8 py-3 rounded font-bold text-lg transition">
+                    ALUGUE
+                </button>
+                <button class="bg-white hover:bg-gray-500 text-black px-8 py-3 rounded font-bold text-lg transition">
+                    COMPRE
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white py-12 px-4">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-car text-2xl text-yellow-400"></i>
+                        <span class="text-2xl font-bold">AUTO-<span class="text-yellow-400">CARS</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Serviço de aluguel e venda de carros de luxo para todas as ocasiões.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Sobre</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Carros</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Serviços</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Aluguel de Carros de Luxo</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Venda de Carros Premium </a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Aluguel Corporativo</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Serviço de Chofer</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Manutenção de Veículos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contato</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-yellow-400"></i>
+                            <span>Av. Paulista, 1000 – Bela Vista, São Paulo – SP, 01310-100</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-yellow-400"></i>
+                            <span>(11) 90000-0000 – São Paulo</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-yellow-400"></i>
+                            <span>info@autocars.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock mr-2 text-yellow-400"></i>
+                            <span>Segunda 8:00 AM - 10:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 AUTO-CARS Aluguel & Venda de Carros. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
